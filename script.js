@@ -58,7 +58,7 @@ function IsEmail(email) {
         success = 1;
       }
 
-      if($('#number').val()<9)
+      if($('#number').val().length < 10)
       {
         $( "#number" ).after('<p class="error">Please enter valid number.</p>');
         success = 1;
