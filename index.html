@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-6">
+                    <img src="images/enago-logo-header.png" class="logo" />
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bn-section">
+        <div class="bn-img-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 bn-col">
+                        <div class="bn-img-text-wrap">
+                            <h2 class="bn-title">Research output is the most important factor in determining University Rankings</h2>
+                            
+                            <p class="bn-text">Our publication coaching helps researchers of hundreds of such universities reach their publishing goals and take their research global.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="bn-form-wrap">
+                            <h5 class="bn-form-title">Interested in training for your university? </h5>
+                            <p class="bn-form-text">Contact us to show your interest</p>
+                            <input type="text" class="bn-form-txtbox" id="name" placeholder="Name*" />
+                            <input type="text" class="bn-form-txtbox" id="university" placeholder="University*" />
+                            <input type="text" class="bn-form-txtbox" id="number"  pattern="[0-9]*" placeholder="Phone*" />
+                            <input type="text" class="bn-form-txtbox" id="email" placeholder="Email*" />
+                            <label id="success">Response submitted</label>
+                            <div class="prim-btn-wrap">
+                                <button class="prim-btn" onclick="onSubmit();">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="wwo-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="wwo-text-wrap">
+                        <h2 class="wwo-title">What We Offer</h2>
+                        <p class="who-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="wwo-img-wrap">
+                        <h5 class="wwo-img-title">Workshops</h5>
+                        <p class="wwo-img-text">Enago conducts worshops by industry experts for curated coaching in campuses worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="wwo-img-wrap">
+                        <h5 class="wwo-img-title">Workshops</h5>
+                        <p class="wwo-img-text">Enago conducts worshops by industry experts for curated coaching in campuses worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="wwo-img-wrap">
+                        <h5 class="wwo-img-title">Workshops</h5>
+                        <p class="wwo-img-text">Enago conducts worshops by industry experts for curated coaching in campuses worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="wwo-img-wrap">
+                        <h5 class="wwo-img-title">Workshops</h5>
+                        <p class="wwo-img-text">Enago conducts worshops by industry experts for curated coaching in campuses worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tv-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tv-text-wrap">
+                        <h2 class="tv-title">Testimonial Videos</h2>
+                        <p class="tv-text">Experts from reputed publishers work with Enago to share their know-how of research publishing</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="tv-main-video">
+                        <video id="tv-video">
+                            <source id="tv-video-src" src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                          </video>
+                          <div class="tv-main-video-overlay">
+                              <div class="tv-overlay-text-wrap">
+                                <img class="tv-play" src="images/play-button.png">
+                                <p class="tv-overlay-text" id="tv-overlay-txt">Structure of an original article: Title to conclusion (IMRAD)</p>
+                              </div>
+                              
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="tv-video-thumb-wrap" data-title="Preparing to write a research paper" data-src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                        <div class="tv-vid-thumb-img" style="background-image: url(images/bn-img.jpeg);"></div>
+                        
+                            <h5 class="tv-thumb-title">Preparing to write a research paper</h5>
+                            
+                        
+                    </div>
+                    <div class="tv-video-thumb-wrap" data-title="Author Contribution" data-src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                        <div class="tv-vid-thumb-img" style="background-image: url(images/bn-img.jpeg);"></div>
+                        
+                            <h5 class="tv-thumb-title">Author Contribution</h5>
+                            
+                        
+                    </div>
+                    <div class="tv-video-thumb-wrap" data-title="Conclusion section" data-src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
+                        <div class="tv-vid-thumb-img" style="background-image: url(images/bn-img.jpeg);"></div>
+                        
+                            <h5 class="tv-thumb-title">Conclusion section</h5>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
